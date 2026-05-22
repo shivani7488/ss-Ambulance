@@ -1,0 +1,234 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <!-- HEADING -->
+
+    <div class="text-center mb-5">
+
+        <h1 class="fw-bold text-danger">
+            About Us
+        </h1>
+
+        <p class="lead">
+
+            We provide 24/7 emergency ambulance services
+            with trained staff and modern medical facilities.
+
+        </p>
+
+    </div>
+
+    <!-- ABOUT SECTION -->
+
+    <div class="row align-items-center mb-5">
+
+        <!-- IMAGE -->
+
+        <div class="col-md-6">
+
+            <img src="https://images.unsplash.com/photo-1587745416684-47953f16f02f"
+                 class="img-fluid rounded shadow">
+
+        </div>
+
+        <!-- CONTENT -->
+
+        <div class="col-md-6">
+
+            <h3 class="fw-bold mb-4 text-danger">
+                Why Choose Us?
+            </h3>
+
+            <p class="text-muted">
+
+                Our ambulance service is dedicated to providing
+                fast, safe, and reliable emergency medical support.
+                We have experienced staff, advanced life-saving equipment,
+                and modern ambulances available 24/7 for patient care
+                and emergency transportation.
+
+            </p>
+
+            <p class="text-muted">
+
+                We focus on patient safety, quick response time,
+                and compassionate healthcare services during emergencies.
+
+            </p>
+
+            <ul class="list-group shadow">
+
+                <li class="list-group-item">
+                    ✔ Fast Response
+                </li>
+
+                <li class="list-group-item">
+                    ✔ Professional Team
+                </li>
+
+                <li class="list-group-item">
+                    ✔ Modern Ambulance
+                </li>
+
+                <li class="list-group-item">
+                    ✔ 24/7 Emergency Support
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- GALLERY SECTION -->
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold text-danger">
+            Our Ambulance Services
+        </h2>
+
+        <p class="text-muted">
+
+            Advanced ambulance and emergency medical support.
+
+        </p>
+
+    </div>
+
+    <div class="row g-4">
+
+        <!-- IMAGE 1 -->
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="card border-0 shadow">
+
+                <img src="{% static 'images/image1.png' %}"
+                     class="img-fluid rounded">
+
+                <div class="card-body text-center">
+
+                    <h4>
+                        ICU Ambulance
+                    </h4>
+
+                    <p class="text-muted">
+                        Equipped with advanced ICU facilities and emergency care support.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- IMAGE 2 -->
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="card border-0 shadow">
+
+                <img src="{% static 'images/image.png' %}"
+                     class="img-fluid rounded">
+
+                <div class="card-body text-center">
+
+                    <h4>
+                        Patient Transport
+                    </h4>
+
+                    <p class="text-muted">
+                        Safe and comfortable patient transfer service available anytime.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- IMAGE 3 -->
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="card border-0 shadow">
+
+                <img src="{% static 'images/image2.png' %}"
+                     class="img-fluid rounded">
+
+                <div class="card-body text-center">
+
+                    <h4>
+                        Critical Care Ambulance
+                    </h4>
+
+                    <p class="text-muted">
+                        Specialized ambulance for critical emergency situations and care.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- IMAGE 4 -->
+
+        <div class="col-lg-6 col-md-6">
+
+            <div class="card border-0 shadow">
+
+                <img src="{% static 'images/1.jpeg' %}"
+                     class="img-fluid rounded">
+
+                <div class="card-body text-center">
+
+                    <h4>
+                        Emergency Support
+                    </h4>
+
+                    <p class="text-muted">
+                        Immediate emergency medical response with trained professionals.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- IMAGE 5 -->
+
+        <div class="col-lg-6 col-md-6">
+
+            <div class="card border-0 shadow">
+
+                <img src="{% static 'images/coffin.png' %}"
+                     class="img-fluid rounded">
+
+                <div class="card-body text-center">
+
+                    <h4>
+                        Coffin Box Service
+                    </h4>
+
+                    <p class="text-muted">
+                        Respectful and secure coffin box transportation services.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

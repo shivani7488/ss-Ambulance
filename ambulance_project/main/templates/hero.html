@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    /* Premium Steel Blue Background with a subtle gradient */
+    .premium-hero { 
+        background: linear-gradient(135deg, #3a6073, #16222f); 
+        padding: 100px 0;
+        color: white;
+    }
+    
+    /* Button ko thoda bada aur attractive banane ke liye */
+    .btn-premium-red { 
+        background-color: #d92027; 
+        color: white; 
+        font-weight: 600; 
+        padding: 15px 35px;
+        border: 2px solid white;
+        border-radius: 8px;
+        letter-spacing: 0.5px;
+        transition: 0.3s all ease-in-out; 
+        box-shadow: 0 5px 15px rgba(217, 32, 39, 0.3);
+    }
+    .btn-premium-red:hover { 
+        background-color: white; 
+        color: #d92027; 
+        border-color: #d92027;
+        transform: translateY(-2px);
+    }
+
+    /* Features Cards ka naya modern layout aur subtle shadows */
+    .feature-card { 
+        background: white; 
+        border: none;
+        border-radius: 16px; 
+        padding: 40px 25px; 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+    .feature-card:hover { 
+        transform: translateY(-8px); 
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+    
+    /* Icons ke naye medical colors aur styling */
+    .feature-card i { 
+        font-size: 50px; 
+        margin-bottom: 20px; 
+        display: inline-block;
+    }
+    .icon-icu { color: #2ec4b6; }
+    .icon-emergency { color: #e63946; }
+    .icon-247 { color: #457b9d; }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<section class="premium-hero text-center d-flex align-items-center justify-content-center shadow-sm">
+    <div class="container">
+        <h1 class="display-4 fw-bold text-uppercase mb-2" style="letter-spacing: 1px;">Fast & Reliable Ambulance Care</h1>
+        <p class="lead mb-4 fw-light opacity-75">Immediate response for life-saving situations in Patna & all over Bihar.</p>
+        <a href="/booking/" class="btn btn-premium-red btn-lg shadow">
+            Book Ambulance Now <i class="fa-solid fa-truck-medical ms-2"></i>
+        </a>
+    </div>
+</section>
+
+
+<section class="container my-5 py-3">
+    <div class="row g-4 text-center justify-content-center">
+        
+        <div class="col-md-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <i class="fa-solid fa-bed-pulse icon-icu"></i>
+                    <h3 class="fw-bold h4 mb-3" style="color: #16222f;">ICU Ambulance</h3>
+                    <p class="text-muted small mb-0">Advanced ICU support ambulance service equipped with top medical facilities.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <i class="fa-solid fa-bell-concierge icon-emergency"></i>
+                    <h3 class="fw-bold h4 mb-3" style="color: #16222f;">Emergency Service</h3>
+                    <p class="text-muted small mb-0">Quick response emergency medical team available at just a single call.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card feature-card h-100">
+                <div class="card-body">
+                    <i class="fa-regular fa-clock icon-247"></i>
+                    <h3 class="fw-bold h4 mb-3" style="color: #16222f;">24/7 Available</h3>
+                    <p class="text-muted small mb-0">Always ready for critical situations. We never sleep so you stay safe.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

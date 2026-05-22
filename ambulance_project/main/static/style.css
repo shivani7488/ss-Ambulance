@@ -1,0 +1,19 @@
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1587745416684-47953f16f02f');
+    background-size:cover;
+    background-position:center;
+}
+
+.card{
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+footer{
+    margin-top:50px;
+}
+

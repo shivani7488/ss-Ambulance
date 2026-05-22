@@ -1,0 +1,356 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.hero{
+    width:100%;
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1600&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero-content h1{
+    font-size:90px;
+    font-weight:900;
+    line-height:1.1;
+}
+
+.hero-content h1 span{
+    color:#ff2e2e;
+}
+
+.hero-content p{
+    font-size:24px;
+    margin-top:20px;
+    color:#ddd;
+}
+
+.hero-btns{
+    margin-top:40px;
+}
+
+.book-btn{
+    background:linear-gradient(to right,#ff0000,#c40000);
+    color:white;
+    padding:18px 40px;
+    border-radius:15px;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    margin-right:15px;
+    transition:0.3s;
+    display:inline-block;
+}
+
+.book-btn:hover{
+    transform:translateY(-5px);
+    color:white;
+}
+
+.call-btn{
+    background:white;
+    color:red;
+    padding:18px 40px;
+    border-radius:15px;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.call-btn:hover{
+    background:#ffe5e5;
+    color:darkred;
+}
+
+.glass-box{
+    margin-top:50px;
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    padding:30px;
+    width:80%;
+}
+
+.glass-item{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.glass-item i{
+    font-size:30px;
+    color:red;
+    margin-right:15px;
+}
+
+.glass-item span{
+    font-size:20px;
+}
+
+.features{
+    margin-top:-80px;
+    position:relative;
+    z-index:10;
+}
+
+.feature-card{
+    background:white;
+    border-radius:25px;
+    padding:40px 25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+    height:100%;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.feature-card i{
+    font-size:55px;
+    color:red;
+    margin-bottom:20px;
+}
+
+.feature-card h3{
+    font-weight:bold;
+}
+
+.stats{
+    padding:100px 0;
+}
+
+.stats-box{
+    text-align:center;
+}
+
+.stats-box h2{
+    font-size:60px;
+    color:red;
+    font-weight:900;
+}
+
+.stats-box p{
+    font-size:22px;
+}
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:50px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .book-btn,
+    .call-btn{
+        display:block;
+        width:100%;
+        margin-bottom:15px;
+        text-align:center;
+    }
+
+    .glass-box{
+        width:100%;
+    }
+}
+
+</style>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <h5 class="text-danger fw-bold mb-4">
+                🚑 24×7 Emergency Ambulance Service
+            </h5>
+
+            <h1>
+                FAST & SAFE <br>
+                <span>AMBULANCE</span>
+            </h1>
+
+            <p>
+                Emergency Medical Transport with Expert Staff <br>
+                Anytime • Anywhere • Everytime
+            </p>
+
+            <div class="hero-btns">
+
+                <a href="#" class="book-btn">
+                    📅 Book Now
+                </a>
+
+                <a href="#" class="call-btn">
+                    📞 Emergency
+                </a>
+
+            </div>
+
+            <!-- GLASS BOX -->
+
+            <div class="glass-box">
+
+                <div class="glass-item">
+                    <i class="fa-solid fa-truck-medical"></i>
+                    <span>ICU Equipped Ambulance</span>
+                </div>
+
+                <div class="glass-item">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <span>Professional Medical Team</span>
+                </div>
+
+                <div class="glass-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Fast Citywide Response</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <h3>24/7 Service</h3>
+
+                    <p>
+                        Always available for emergency support.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <i class="fa-solid fa-heart-pulse"></i>
+
+                    <h3>Critical Care</h3>
+
+                    <p>
+                        Modern ICU ambulance with advanced equipment.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+
+                    <i class="fa-solid fa-shield-heart"></i>
+
+                    <h3>Patient Safety</h3>
+
+                    <p>
+                        Secure and monitored emergency transportation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="stats-box">
+
+                    <h2>5000+</h2>
+                    <p>Patients Saved</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="stats-box">
+
+                    <h2>24×7</h2>
+                    <p>Emergency Support</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="stats-box">
+
+                    <h2>10 Min</h2>
+                    <p>Quick Response</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

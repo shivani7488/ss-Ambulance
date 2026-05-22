@@ -1,0 +1,884 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance Service</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    
+    
+<!-- Navbar -->
+
+<!-- TOP BAR START -->
+
+<div class="topbar">
+
+    <div class="container-fluid">
+
+        <div class="row align-items-center">
+
+            <!-- LEFT TEXT -->
+
+            <div class="col-lg-6">
+
+                <marquee behavior="scroll" direction="left">
+
+                    India's No.1 Ambulance Service Provider is located in Bihar's capital Patna,
+                    near Patna Junction.
+
+                </marquee>
+
+            </div>
+
+            <!-- RIGHT TEXT -->
+
+            <div class="col-lg-6">
+
+                <marquee behavior="scroll" direction="left">
+
+                    We provide Ambulance Service in all over Bihar.
+
+                </marquee>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- HEADER SECTION -->
+
+<div class="header-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- LOGO -->
+
+            <div class="col-lg-4">
+
+                <div class="logo-box">
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/2967/2967350.png"
+                         class="logo-img">
+
+                    <div>
+
+                        <h2 class="logo-title">
+                            Ambulance
+                        </h2>
+
+                        <p class="logo-subtitle">
+                            24×7 Service
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SUPPORT -->
+
+            <div class="col-lg-2 col-md-4">
+
+                <div class="info-box">
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    <div>
+
+                        <h5>
+                            Support
+                        </h5>
+
+                        <p>
+                            24 × 7 Service
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PHONE -->
+
+            <div class="col-lg-3 col-md-4">
+
+                <div class="info-box">
+
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+
+                    <div>
+
+                        <h5>
+                            Call us anytime
+                        </h5>
+
+                        <p>
+                            +(91) 7488514972
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- EMAIL -->
+
+            <div class="col-lg-3 col-md-4">
+
+                <div class="info-box">
+
+                    <i class="fa-regular fa-envelope-open"></i>
+
+                    <div>
+
+                        <h5>
+                            Drop a message
+                        </h5>
+
+                        <p>
+                            shivani143@gmail.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CSS -->
+
+<style>
+
+/* TOPBAR */
+
+.topbar{
+
+    background:orangered;
+
+    color:white;
+
+    padding:10px 0;
+
+    font-size:18px;
+
+    font-weight:500;
+}
+
+/* HEADER */
+
+.header-section{
+
+    background:#f5f5f5;
+
+    padding:25px 0;
+
+    border-bottom:1px solid #ddd;
+}
+
+/* LOGO */
+
+.logo-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.logo-img{
+
+    width:90px;
+}
+
+.logo-title{
+
+    color:#e53935;
+
+    font-size:42px;
+
+    margin:0;
+
+    font-weight:700;
+}
+
+.logo-subtitle{
+
+    font-size:24px;
+
+    color:#111;
+
+    margin:0;
+
+    font-style:italic;
+}
+
+/* INFO BOX */
+
+.info-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.info-box i{
+
+    font-size:35px;
+
+    color:#ff1744;
+}
+
+.info-box h5{
+
+    margin:0;
+
+    font-size:22px;
+
+    color:#444;
+
+    font-weight:600;
+}
+
+.info-box p{
+
+    margin:0;
+
+    color:#e53935;
+
+    font-size:18px;
+
+    font-weight:600;
+}
+
+/* MOBILE */
+
+@media(max-width:991px){
+
+    .logo-box{
+
+        justify-content:center;
+
+        margin-bottom:30px;
+    }
+
+    .info-box{
+
+        margin-bottom:20px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .topbar{
+
+        font-size:14px;
+    }
+
+    .logo-title{
+
+        font-size:32px;
+    }
+
+    .logo-subtitle{
+
+        font-size:18px;
+    }
+
+    .info-box{
+
+        justify-content:center;
+
+        text-align:center;
+    }
+
+}
+
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="/">Ambulance</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/about/">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/services/">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery/">Gallery</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/booking/">Booking</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contact/">Contact</a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+
+<!-- Content -->
+
+{% block content %}
+{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Ambulance Service Footer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="family">
+
+    <style>
+        :root {
+            --primary-red: #e63946;       /* Clean Professional Emergency Red */
+            --accent-gold: #ffc107;       /* Premium Gold */
+            --dark-navy: #0b132b;         /* Deep Trustworthy Navy Blue */
+            --card-light: #ffffff;        /* Pure white for top stats */
+            --text-main: #1d3557;         /* Dark blue for heading text */
+            --text-muted: #94a3b8;        /* Soft gray for links */
+            --text-light: #f8fafc;        /* Off-white for footer text */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            margin: 0;
+        }
+
+        /* ==========================================
+           1. MODERN STATS / COUNTER SECTION
+        ========================================== */
+        .medical-stats-section {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            padding: 60px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .stat-card {
+            background: var(--card-light);
+            padding: 30px 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            text-align: center;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(230, 57, 70, 0.1);
+        }
+
+        .stat-icon-wrapper {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(230, 57, 70, 0.1);
+            color: var(--primary-red);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px auto;
+            font-size: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-red);
+            margin-bottom: 5px;
+            letter-spacing: -1px;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* ==========================================
+           2. PREMIUM FOOTER SECTION
+        ========================================== */
+        .custom-premium-footer {
+            background-color: var(--dark-navy);
+            color: var(--text-light);
+            position: relative;
+        }
+
+        /* Top Accent Lines */
+        .footer-top-line {
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-red), var(--accent-gold), var(--primary-red));
+            width: 100%;
+        }
+
+        /* Footing Headings */
+        .footer-heading {
+            color: #ffffff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Red under-line effect from your screenshot but modernised */
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 35px;
+            height: 3px;
+            background-color: var(--primary-red);
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+
+        .custom-premium-footer .row > div:hover .footer-heading::after {
+            width: 55px;
+        }
+
+        /* SVG Logo Styling */
+        .footer-logo-icon svg {
+            filter: drop-shadow(0 4px 6px rgba(255, 193, 7, 0.2));
+        }
+
+        .footer-about-text {
+            color: #cbd5e1;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .footer-more-btn {
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-more-btn:hover {
+            color: #ffffff;
+            padding-left: 5px;
+        }
+
+        /* Clean Links (Removed harsh dashes, added elegant icons) */
+        .footer-links-grid {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links-grid li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links-grid li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.92rem;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links-grid li a::before {
+            content: '\f105'; /* FontAwesome Angle Right */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--primary-red);
+            font-size: 0.8rem;
+            transition: transform 0.2s ease;
+        }
+
+        .footer-links-grid li a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-links-grid li a:hover::before {
+            transform: translateX(3px);
+        }
+
+        /* Contact Details */
+        .footer-contact-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 15px;
+            color: #cbd5e1;
+            font-size: 0.92rem;
+        }
+
+        .footer-contact-row i {
+            color: var(--primary-red);
+            margin-top: 4px;
+            font-size: 1rem;
+            width: 20px;
+        }
+
+        /* Emergency Highlight Box */
+        .contact-highlight {
+            background: linear-gradient(90deg, rgba(230, 57, 70, 0.15), transparent);
+            border-left: 4px solid var(--primary-red);
+            padding: 12px 15px;
+            border-radius: 0 12px 12px 0;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        /* Newsletter Box */
+        .footer-newsletter-box {
+            background-color: rgba(255,255,255,0.03);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer-newsletter-box h5 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .footer-newsletter-box .form-control {
+            background-color: rgba(0,0,0,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .footer-newsletter-box .form-control::placeholder {
+            color: #64748b;
+        }
+
+        .footer-newsletter-box .form-control:focus {
+            background-color: rgba(0,0,0,0.3);
+            border-color: var(--primary-red);
+            box-shadow: none;
+            color: white;
+        }
+
+        .footer-newsletter-box .btn {
+            background-color: var(--primary-red);
+            color: white;
+            border: none;
+            padding: 0 20px;
+        }
+
+        /* Bottom Bar & Social Links */
+        .footer-bottom-bar {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.88rem;
+            color: #94a3b8;
+        }
+
+        .footer-social-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-social-links a {
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255,255,255,0.05);
+            color: #cbd5e1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social-links a:hover {
+            background-color: var(--primary-red);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 767.98px) {
+            .custom-premium-footer .text-start {
+                text-align: center !important;
+            }
+            .footer-heading::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .footer-contact-row {
+                justify-content: center;
+            }
+            .contact-highlight {
+                border-left: none;
+                border-top: 4px solid var(--primary-red);
+                border-radius: 0 0 12px 12px;
+                background: rgba(230, 57, 70, 0.1);
+            }
+            .footer-social-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+                
+    <footer class="custom-premium-footer">
+        
+        <div class="footer-top-line"></div>
+        
+        <div class="container py-5">
+            <div class="row g-4">
+                
+                <div class="col-lg-3 col-md-6 text-start">
+                    <h4 class="footer-heading">About us</h4>
+                    <div class="footer-logo-icon mb-3">
+                        <svg width="45" height="45" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#ffc107" stroke-width="5"/>
+                            <rect x="42" y="22" width="16" height="56" fill="#ffc107"/>
+                            <rect x="22" y="42" width="56" height="16" fill="#ffc107"/>
+                        </svg>
+                    </div>
+                    <p class="footer-about-text">
+                        We provide professional emergency ambulance services with advanced ICU setups, ventilators, and 24/7 medical support across Bihar and surrounding areas.
+                    </p>
+                    <a href="#" class="footer-more-btn">More Info <i class="fa-solid fa-arrow-right-long ms-1"></i></a>
+                </div>
+
+                <div class="col-lg-5 col-md-6 text-start">
+                    <h4 class="footer-heading">Useful Links</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="footer-links-grid">
+                                <li><a href="#">Air Ambulance</a></li>
+                                <li><a href="#">ICU Ambulance</a></li>
+                                <li><a href="#">Train Ambulance</a></li>
+                                <li><a href="#">Cardiac Ambulance</a></li>
+                                <li><a href="#">Ventilator Support</a></li>
+                                <li><a href="#">Oxygen Ambulance</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="footer-links-grid">
+                                <li><a href="#">Freezer Box</a></li>
+                                <li><a href="#">Dead Body Van</a></li>
+                                <li><a href="#">Medical Flight</a></li>
+                                <li><a href="#">Home Nursing</a></li>
+                                <li><a href="#">Corporate Tie-up</a></li>
+                                <li><a href="#">24/7 Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 text-start">
+                    <h4 class="footer-heading">Hot Contact</h4>
+                    
+                    <div class="footer-contact-row">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@ambulancecare.com</span>
+                    </div>
+                    <div class="footer-contact-row">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>support@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-row contact-highlight">
+                        <i class="fa-solid fa-phone-volume fa-shake"></i>
+                        <span class="ms-1">+91 7488514972</span>
+                    </div>
+                    <div class="footer-contact-row mt-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Near Patna Junction, Patna, Bihar, India</span>
+                    </div>
+
+                    <div class="footer-newsletter-box mt-4">
+                        <h5>Subscribe to our newsletter</h5>
+                        <div class="input-group mt-2">
+                            <input type="email" class="form-control" placeholder="Your email address...">
+                            <button class="btn" type="button">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar py-3">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <p class="mb-0">&copy; 2026 Ambulance Care. All Rights Reserved.</p>
+                <div class="footer-social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- FLOATING CONTACT BUTTONS START -->
+
+<style>
+
+.floating-icons{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.floating-icons a{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+}
+
+.floating-icons a:hover{
+    transform: scale(1.1);
+}
+
+.whatsapp{
+    background: #25D366;
+}
+
+.call{
+    background: #E91E63;
+}
+
+.message{
+    background: #2196F3;
+}
+
+</style>
+
+<!-- FONT AWESOME -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- FLOATING ICONS -->
+
+<div class="floating-icons">
+
+    <!-- WhatsApp -->
+
+    <a href="https://wa.me/917488514972"
+       target="_blank"
+       class="whatsapp">
+
+       <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+    <!-- Call -->
+
+    <a href="tel:+917488514972"
+       class="call">
+
+       <i class="fas fa-phone"></i>
+
+    </a>
+
+    <!-- Message -->
+
+    <a href="sms:+917488514972"
+       class="message">
+
+       <i class="fas fa-comment-dots"></i>
+
+    </a>
+
+</div>
+
+<!-- FLOATING CONTACT BUTTONS END -->
+</body>
+</html>
